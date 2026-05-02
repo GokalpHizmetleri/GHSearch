@@ -22,6 +22,11 @@
 
         <form id="search-form">
             <div class="search-bar-wrapper">
+                <select id="search-source" class="search-source-select" aria-label="Search Source">
+                    <option value="web">Web</option>
+                    <option value="wikipedia">Wikipedia</option>
+                    <option value="images">Images</option>
+                </select>
                 <input type="text" id="search-input" placeholder="Search the web and ask AI..." autocomplete="off">
                 <button type="submit" id="search-submit" aria-label="Search">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -85,3 +90,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
