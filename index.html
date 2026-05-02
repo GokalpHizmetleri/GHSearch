@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHSearch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <main class="search-container">
+        <div class="logo-container">
+            <pre class="ascii-logo">
+    ____ _   _ ____                      _     
+  / ___| | | / ___|  ___  __ _ _ __ ___| |__  
+ | |  _| |_| \___ \ / _ \/ _` | '__/ __| '_ \ 
+ | |_| |  _  |___) |  __/ (_| | | | (__| | | |
+  \____|_| |_|____/ \___|\__,_|_|  \___|_| |_|
+            </pre>
+        </div>
+
+        <form id="search-form">
+            <div class="search-bar-wrapper">
+                <input type="text" id="search-input" placeholder="Search the web and ask AI..." autocomplete="off">
+                <button type="submit" id="search-submit" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+        </form>
+
+        <div id="games-section" class="games-container">
+            <h4>🎮 Games</h4>
+            <div class="games-list">
+                
+                <div class="game-card">
+                    <div class="game-card-header">
+                        <span class="game-title">GHAppel</span>
+                        <span class="expand-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                        </span>
+                    </div>
+                    <div class="game-card-body">
+                        <p>A social and competitive game experience. Compete with your friends.</p>
+                        <a href="http://appel.gh.000.pe" target="_blank" class="play-btn">Play Now</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-card-header">
+                        <span class="game-title">GHDowngrade</span>
+                        <span class="expand-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                        </span>
+                    </div>
+                    <div class="game-card-body">
+                        <p>A fun online multiplayer game. Jump in and challenge your opponents.</p>
+                        <a href="http://downgrade.gh.000.pe" target="_blank" class="play-btn">Play Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="results-area" class="results-container hidden">
+            <div class="ai-overview-section">
+                <h3>✨ AI Overview</h3>
+                <div id="ai-content" class="content-box ai-overview-box">
+                    <div class="placeholder-text">Generating overview...</div>
+                </div>
+            </div>
+            
+            <div class="web-results-section">
+                <h3>🌐 Web Results</h3>
+                <div id="web-content" class="web-results-list">
+                    <div class="placeholder-text">Fetching results...</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
