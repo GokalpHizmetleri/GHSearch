@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Base64 Encoded API Keys
-    const encodedGroqKey = "Z3NrX280QkJRcWxVMElHUjJpd3pWZ0prV0dkeWIzRlkxUjA0bDE1RTZRQ2Z2WnVNOWJTalZhNzM="; 
-    const encodedTavilyKey = "dHZseS1kZXYtM2xsQmFlLXppTUdvVlVrdmF0R1NHUVNINjNpYkJiYzI3Z1FKZ2g5MG5lSVFVNjlKVQ==";
+    const encodedGroqKey = ""; 
+    const encodedTavilyKey = "";
     
     let currentApiKey = "";
     let tavilyApiKey = "";
